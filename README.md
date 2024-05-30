@@ -16,13 +16,13 @@ If you don't want to install the cli tools you can use the docker image.
 Replace `input.avi` with your filename or directory.
 
 ```bash
-docker run -v .:/data -it --rm video-compressor-tool:latest -o /data/ /data/input.avi
+docker run -v .:/data -it --rm ostahl/video-compressor-tool:latest -o /data/ /data/input.avi
 ```
 
 On macOS you can use the hardware acceleration encoder with the following command:
 
 ```bash
-docker run -v .:/data -it --rm video-compressor-tool:latest -encoder hevc_videotoolbox -o /data/ /data/input.avi
+docker run -v .:/data -it --rm ostahl/video-compressor-tool:latest -encoder hevc_videotoolbox -o /data/ /data/input.avi
 ```
 
 # Build
